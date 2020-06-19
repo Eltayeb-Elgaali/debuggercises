@@ -1,21 +1,24 @@
 # Debuggercises 
 
-> 6/19/2020, 2:17:38 AM 
+## /exercises/01-variables/exercises 
 
-## [exercises](../../README.md)/[01-variables](../README.md)/exercises 
+> 6/14/2020, 2:03:59 AM 
+
+[../REVIEW.md](../REVIEW.md)
 
 - [/1-let.js](#1-letjs)  
 - [/2-let.js](#2-letjs)  
 - [/3-let-or-const.js](#3-let-or-constjs)  
 - [/4-let-or-const.js](#4-let-or-constjs)  
 - [/5-let-or-const.js](#5-let-or-constjs)  
+
 ---
 
 ## /1-let.js 
 
 >  
 >
-> [review source](../../../exercises/01-variables/exercises/1-let.js)
+> [review source](./1-let.js)
 
 ```txt
 LOG: c
@@ -57,7 +60,7 @@ console.log(firstFiveLetters); // should log "abcde"
 
 >  
 >
-> [review source](../../../exercises/01-variables/exercises/2-let.js)
+> [review source](./2-let.js)
 
 ```txt
 LOG: chocolate cake
@@ -96,7 +99,7 @@ console.log(desert); // should log 'chocolate cake with frosting and banana'
 
 >  
 >
-> [review source](../../../exercises/01-variables/exercises/3-let-or-const.js)
+> [review source](./3-let-or-const.js)
 
 ```txt
 LOG: undefined
@@ -167,7 +170,7 @@ console.log(aColor);
 
 >  
 >
-> [review source](../../../exercises/01-variables/exercises/4-let-or-const.js)
+> [review source](./4-let-or-const.js)
 
 ```txt
 LOG: a
@@ -230,7 +233,7 @@ console.log(x); // should print 'a'
 
 >  
 >
-> [review source](../../../exercises/01-variables/exercises/5-let-or-const.js)
+> [review source](./5-let-or-const.js)
 
 ```txt
 LOG: chair

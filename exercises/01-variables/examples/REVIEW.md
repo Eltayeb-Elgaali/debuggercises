@@ -1,19 +1,22 @@
 # Debuggercises 
 
-> 6/19/2020, 2:17:38 AM 
+## /exercises/01-variables/examples 
 
-## [exercises](../../README.md)/[01-variables](../README.md)/examples 
+> 6/14/2020, 2:03:59 AM 
+
+[../REVIEW.md](../REVIEW.md)
 
 - [/1-declaration-assignment-reassignment.js](#1-declaration-assignment-reassignmentjs)  
 - [/2-reusing-variables.js](#2-reusing-variablesjs)  
 - [/3-const-vs-let.js](#3-const-vs-letjs) - _error_ 
+
 ---
 
 ## /1-declaration-assignment-reassignment.js 
 
 >  
 >
-> [review source](../../../exercises/01-variables/examples/1-declaration-assignment-reassignment.js)
+> [review source](./1-declaration-assignment-reassignment.js)
 
 ```txt
 LOG: undefined
@@ -59,7 +62,7 @@ console.log(anotherVariable);
 
 >  
 >
-> [review source](../../../exercises/01-variables/examples/2-reusing-variables.js)
+> [review source](./2-reusing-variables.js)
 
 ```txt
 LOG: oak
@@ -93,7 +96,7 @@ console.log(furniture);
 
 > error 
 >
-> [review source](../../../exercises/01-variables/examples/3-const-vs-let.js)
+> [review source](./3-const-vs-let.js)
 
 ```txt
 UNCAUGHT: TypeError: Assignment to constant variable.
@@ -106,7 +109,7 @@ UNCAUGHT: TypeError: Assignment to constant variable.
     at Module.require (module.js:596:17)
     at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:72:1) 
 ```
 
 ```js

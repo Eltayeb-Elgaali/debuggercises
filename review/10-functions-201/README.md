@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/18/2020, 7:46:56 AM 
+> 6/19/2020, 2:17:38 AM 
 
 ## [exercises](../README.md)/10-functions-201 
 
@@ -16,6 +16,6 @@
   - [/5-twins.js](./1-fill-in-the-blanks/README.md#5-twinsjs) - _incomplete_ 
   - [/6-twins.js](./1-fill-in-the-blanks/README.md#6-twinsjs) - _incomplete_ 
 - [/2-fix-the-bugs](./2-fix-the-bugs/README.md)
-  - [/1.js](./2-fix-the-bugs/README.md#1js) - _fail_ 
+  - [/1.js](./2-fix-the-bugs/README.md#1js) - _error_ 
   - [/2.js](./2-fix-the-bugs/README.md#2js) - _error_ 
-  - [/3.js](./2-fix-the-bugs/README.md#3js) - _fail_ 
+  - [/3.js](./2-fix-the-bugs/README.md#3js) - _error_ 

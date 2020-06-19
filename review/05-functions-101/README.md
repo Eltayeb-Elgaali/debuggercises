@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/18/2020, 7:46:56 AM 
+> 6/19/2020, 2:17:38 AM 
 
 ## [exercises](../README.md)/05-functions-101 
 
@@ -14,7 +14,7 @@
 - [/1-scrambles](./1-scrambles/README.md)
   - [/1-write-expected.js](./1-scrambles/README.md#1-write-expectedjs) - _incomplete_ 
   - [/2-write-arguments.js](./1-scrambles/README.md#2-write-argumentsjs) - _incomplete_ 
-  - [/3-write-function.js](./1-scrambles/README.md#3-write-functionjs) - _fail_ 
+  - [/3-write-function.js](./1-scrambles/README.md#3-write-functionjs) - _error_ 
 - [/2-local-param-global](./2-local-param-global/README.md)
   - [/0-example.js](./2-local-param-global/README.md#0-examplejs)  
   - [/1-parameter-local.js](./2-local-param-global/README.md#1-parameter-localjs) - _incomplete_ 

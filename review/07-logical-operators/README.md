@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/18/2020, 7:46:56 AM 
+> 6/19/2020, 2:17:38 AM 
 
 ## [exercises](../README.md)/07-logical-operators 
 
@@ -11,7 +11,7 @@
   - [/or.js](./examples/README.md#orjs)  
   - [/ternary.js](./examples/README.md#ternaryjs)  
 - [/exercises](./exercises/README.md)
-  - [/and.js](./exercises/README.md#andjs) - _fail_ 
-  - [/not.js](./exercises/README.md#notjs) - _fail_ 
-  - [/or.js](./exercises/README.md#orjs) - _fail_ 
-  - [/ternary.js](./exercises/README.md#ternaryjs) - _fail_ 
+  - [/and.js](./exercises/README.md#andjs) - _error_ 
+  - [/not.js](./exercises/README.md#notjs) - _error_ 
+  - [/or.js](./exercises/README.md#orjs) - _error_ 
+  - [/ternary.js](./exercises/README.md#ternaryjs) - _error_ 
