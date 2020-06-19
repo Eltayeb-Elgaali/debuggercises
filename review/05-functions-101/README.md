@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/19/2020, 2:17:38 AM 
+> 6/19/2020, 2:24:11 AM 
 
 ## [exercises](../README.md)/05-functions-101 
 
@@ -13,15 +13,15 @@
   - [/6-test-cases.js](./0-examples/README.md#6-test-casesjs) - _pass_ 
 - [/1-scrambles](./1-scrambles/README.md)
   - [/1-write-expected.js](./1-scrambles/README.md#1-write-expectedjs) - _incomplete_ 
-  - [/2-write-arguments.js](./1-scrambles/README.md#2-write-argumentsjs) - _incomplete_ 
-  - [/3-write-function.js](./1-scrambles/README.md#3-write-functionjs) - _error_ 
+  - [/2-write-arguments.js](./1-scrambles/README.md#2-write-argumentsjs) - _pass_ 
+  - [/3-write-function.js](./1-scrambles/README.md#3-write-functionjs) - _pass_ 
 - [/2-local-param-global](./2-local-param-global/README.md)
   - [/0-example.js](./2-local-param-global/README.md#0-examplejs)  
-  - [/1-parameter-local.js](./2-local-param-global/README.md#1-parameter-localjs) - _incomplete_ 
-  - [/2-parameter-global.js](./2-local-param-global/README.md#2-parameter-globaljs) - _incomplete_ 
-  - [/3-parameter-global.js](./2-local-param-global/README.md#3-parameter-globaljs) - _incomplete_ 
-  - [/5-local-global.js](./2-local-param-global/README.md#5-local-globaljs) - _incomplete_ 
-  - [/6-local-global.js](./2-local-param-global/README.md#6-local-globaljs) - _incomplete_ 
-  - [/7-parameter-local-global.js](./2-local-param-global/README.md#7-parameter-local-globaljs) - _incomplete_ 
+  - [/1-parameter-local.js](./2-local-param-global/README.md#1-parameter-localjs) - _pass_ 
+  - [/2-parameter-global.js](./2-local-param-global/README.md#2-parameter-globaljs) - _pass_ 
+  - [/3-parameter-global.js](./2-local-param-global/README.md#3-parameter-globaljs) - _pass_ 
+  - [/5-local-global.js](./2-local-param-global/README.md#5-local-globaljs) - _pass_ 
+  - [/6-local-global.js](./2-local-param-global/README.md#6-local-globaljs) - _pass_ 
+  - [/7-parameter-local-global.js](./2-local-param-global/README.md#7-parameter-local-globaljs) - _pass_ 
   - [/8-prameter-local-global.js](./2-local-param-global/README.md#8-prameter-local-globaljs) - _incomplete_ 
   - [/extra-pure-functions.js](./2-local-param-global/README.md#extra-pure-functionsjs)  
