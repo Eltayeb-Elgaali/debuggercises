@@ -13,7 +13,9 @@ temp = a;
 a = b;
 const d = a;
 // write your code below here
-
+a = c;
+c = b;
+b = temp;
 
 
 
@@ -28,9 +30,9 @@ console.assert(isTrue2, 'Test 2');
 const isTrue3 = c === 3;
 console.assert(isTrue3, 'Test 3');
 
-const isTrue4 = d === _;
+const isTrue4 = d === c;
 console.assert(isTrue4, 'Test 4');
 
-const isTrue5 = temp === _;
+const isTrue5 = temp === b;
 console.assert(isTrue5, 'Test 5');
 

@@ -8,7 +8,7 @@ let temp = null;
 // swap the values stored by a and b ...
 temp = a;
 a = b;
-
+b = temp;
 
 // assert expected values
 

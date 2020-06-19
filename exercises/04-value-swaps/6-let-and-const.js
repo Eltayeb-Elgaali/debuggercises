@@ -12,8 +12,8 @@ temp = a;
 const c = temp;
 
 // write your code below here, and above the assertions
-
-
+a = b;
+b = temp;
 
 
 // replace the _ with a value to pass the assertions
@@ -24,9 +24,9 @@ console.assert(isTrue1, "Test 1");
 const isTrue2 = b === 2;
 console.assert(isTrue2, "Test 2");
 
-const isTrue3 = c === _;
+const isTrue3 = c === b;
 console.assert(isTrue3, "Test 3");
 
-const isTrue4 = temp === _;
+const isTrue4 = temp === c;
 console.assert(isTrue4, "Test 4");
 

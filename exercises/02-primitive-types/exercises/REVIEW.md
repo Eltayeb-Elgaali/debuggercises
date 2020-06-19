@@ -1,3 +1,43 @@
+# Debuggercises 
+
+## /exercises/02-primitive-types/exercises 
+
+> 6/14/2020, 2:03:59 AM 
+
+[../REVIEW.md](../REVIEW.md)
+
+- [/fill-in-the-type.js](#fill-in-the-typejs)  
+
+---
+
+## /fill-in-the-type.js 
+
+>  
+>
+> [review source](./fill-in-the-type.js)
+
+```txt
+LOG: -- example --
+LOG: object  null
+LOG: object  null
+LOG: -- challenge1 --
+LOG: string  undefined
+LOG: string  undefined
+LOG: -- challenge2 --
+LOG: number  Infinity
+LOG: number  Infinity
+LOG: -- challenge3 --
+LOG: number  4
+LOG: number  4
+LOG: -- challenge4 --
+LOG: string  4
+LOG: string  4
+LOG: -- challenge5 --
+LOG: string  string
+LOG: string  string
+```
+
+```js
 'use strict';
 
 // replace the _'s to complete the challenges
@@ -33,4 +73,9 @@ console.log('-- challenge5 --');
 const challenge5 = (typeof (typeof false));
 console.log('string', 'string');
 console.log(typeof challenge5, challenge5);
+
+
+```
+
+[TOP](#debuggercises)
 
