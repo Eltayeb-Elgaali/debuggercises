@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/19/2020, 2:24:11 AM 
+> 6/19/2020, 2:28:34 AM 
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/2-local-param-global 
 
@@ -11,7 +11,7 @@
 - [/5-local-global.js](#5-local-globaljs) - _pass_ 
 - [/6-local-global.js](#6-local-globaljs) - _pass_ 
 - [/7-parameter-local-global.js](#7-parameter-local-globaljs) - _pass_ 
-- [/8-prameter-local-global.js](#8-prameter-local-globaljs) - _incomplete_ 
+- [/8-prameter-local-global.js](#8-prameter-local-globaljs) - _pass_ 
 - [/extra-pure-functions.js](#extra-pure-functionsjs)  
 ---
 
@@ -493,22 +493,18 @@ console.assert(globalTest5, 'Test 7: global');
 
 ## /8-prameter-local-global.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js:11:32)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
++ PASS: Test 1: global
++ PASS: Test 2: jazz
++ PASS: Test 3: global
++ PASS: Test 4: global
++ PASS: Test 5: jazz
++ PASS: Test 6: global
++ PASS: Test 7: global
 ```
 
 ```js
@@ -522,33 +518,32 @@ function jazz(parameter) {
   return `${parameter} ${local} ${global}`;
 }
 
-const globalTest1 = global === _;
+const globalTest1 = global === '.';
 console.assert(globalTest1, 'Test 1: global');
 
 const jazzReturn1 = jazz('hello');
-const jazzTest1 = jazzReturn1 === _;
+const jazzTest1 = jazzReturn1 === 'hello jazzy . #.';
 console.assert(jazzTest1, 'Test 2: jazz');
 
-const globalTest2 = global === _;
+const globalTest2 = global === '#.';
 console.assert(globalTest2, 'Test 3: global');
 
 global = 'hi';
 
-const globalTest3 = global === _;
+const globalTest3 = global === 'hi';
 console.assert(globalTest3, 'Test 4: global');
 
 const jazzReturn2 = jazz('boat');
-const jazzTest2 = jazzReturn2 === _;
+const jazzTest2 = jazzReturn2 === 'boat jazzy hi #hi';
 console.assert(jazzTest2, 'Test 5: jazz');
 
-const globalTest4 = global === _;
+const globalTest4 = global === '#hi';
 console.assert(globalTest4, 'Test 6: global');
 
 global = 'bye.';
 
-const globalTest5 = global === _;
+const globalTest5 = global === 'bye.';
 console.assert(globalTest5, 'Test 7: global');
-
 ```
 
 [TOP](#debuggercises)
