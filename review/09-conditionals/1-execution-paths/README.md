@@ -1,34 +1,32 @@
 # Debuggercises 
 
-> 6/19/2020, 5:20:10 PM 
+> 6/19/2020, 10:12:26 PM 
 
 ## [exercises](../../README.md)/[09-conditionals](../README.md)/1-execution-paths 
 
-- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
-- [/3-write-arguments.js](#3-write-argumentsjs) - _error_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
+- [/3-write-arguments.js](#3-write-argumentsjs) - _pass_ 
 - [/4-write-function.js](#4-write-functionjs) - _incomplete_ 
 - [/5-write-function.js](#5-write-functionjs) - _error_ 
 ---
 
 ## /1-write-expected.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/09-conditionals/1-execution-paths/1-write-expected.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/1-execution-paths/1-write-expected.js:14:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -45,42 +43,41 @@ function mystery(a, b) {
 }
 
 
-const _1_expect = _;
+const _1_expect = 'path 2';
 const _1_actual = mystery(0, null);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
-const _2_expect = _;
+const _2_expect = 'path 3';
 const _2_actual = mystery(false, 'hello');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
-const _3_expect = _;
+const _3_expect = 'path 3';
 const _3_actual = mystery(true, undefined);
 console.assert(_3_actual === _3_expect, 'Test 3');
 
-const _4_expect = _;
+const _4_expect = 'path 1';
 const _4_actual = mystery(1, -1);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
-const _5_expect = _;
+const _5_expect = 'path 2';
 const _5_actual = mystery('', '');
 console.assert(_5_actual === _5_expect, 'Test 5');
 
-const _6_expect = _;
+const _6_expect = 'path 1';
 const _6_actual = mystery('_6_expect', '_6_actual');
 console.assert(_6_actual === _6_expect, 'Test 6');
 
-const _7_expect = _;
+const _7_expect = 'path 3';
 const _7_actual = mystery(0, 12);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = _;
+const _8_expect = 'path 2';
 const _8_actual = mystery(null, undefined);
 console.assert(_8_actual === _8_expect, 'Test 8');
 
-const _9_expect = _;
+const _9_expect = 'path 3';
 const _9_actual = mystery(NaN, Infinity);
 console.assert(_9_actual === _9_expect, 'Test 9');
-
 ```
 
 [TOP](#debuggercises)
@@ -89,22 +86,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /2-write-arguments.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/09-conditionals/1-execution-paths/2-write-arguments.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/1-execution-paths/2-write-arguments.js:15:27)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -122,41 +117,40 @@ function mystery(a, b) {
 
 
 const _1_expect = 'path 1';
-const _1_actual = mystery(_, _);
+const _1_actual = mystery(3, 'number' );
 console.assert(_1_actual === _1_expect, 'Test 1');
 
 const _2_expect = 'path 1';
-const _2_actual = mystery(_, _);
+const _2_actual = mystery(true, 'boolean');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
 const _3_expect = 'path 1';
-const _3_actual = mystery(_, _);
+const _3_actual = mystery('HYF', 'string');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 const _4_expect = 'path 2';
-const _4_actual = mystery(_, _);
+const _4_actual = mystery('number', 777);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 const _5_expect = 'path 2';
-const _5_actual = mystery(_, _);
+const _5_actual = mystery('boolean', false);
 console.assert(_5_actual === _5_expect, 'Test 5');
 
 const _6_expect = 'path 2';
-const _6_actual = mystery(_, _);
+const _6_actual = mystery('string', 'brussel');
 console.assert(_6_actual === _6_expect, 'Test 6');
 
 const _7_expect = 'path 3';
-const _7_actual = mystery(_, _);
+const _7_actual = mystery(1, 1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = 'path 3';
-const _8_actual = mystery(_, _);
+const _8_actual = mystery('anything', 'also any thing here');
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = 'path 3';
-const _9_actual = mystery(_, _);
+const _9_actual = mystery('you can choose', 3);
 console.assert(_9_actual === _9_expect, 'Test 9');
-
 ```
 
 [TOP](#debuggercises)
@@ -165,22 +159,19 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-write-arguments.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/09-conditionals/1-execution-paths/3-write-arguments.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/1-execution-paths/3-write-arguments.js:22:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
 ```
 
 ```js
@@ -204,20 +195,20 @@ function mystery(a, b) {
 
 // path 1
 const _1_expect = 'path 1';
-const _1_actual = mystery(0, null);
+const _1_actual = mystery(0, 4);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
 const _2_expect = 'path 1';
-const _2_actual = mystery(false, 'hello');
+const _2_actual = mystery(3, 3);
 console.assert(_2_actual === _2_expect, 'Test 2');
 
 // path 2
 const _3_expect = 'path 2';
-const _3_actual = mystery(true, undefined);
+const _3_actual = mystery(7, undefined);
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 const _4_expect = 'path 2';
-const _4_actual = mystery(1, -1);
+const _4_actual = mystery(1, null);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 // path 3
@@ -231,13 +222,12 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 // path 4
 const _7_expect = 'path 4';
-const _7_actual = mystery(0, 12);
+const _7_actual = mystery(null, 'HYF');
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = 'path 4';
 const _8_actual = mystery(null, undefined);
 console.assert(_8_actual === _8_expect, 'Test 8');
-
 ```
 
 [TOP](#debuggercises)

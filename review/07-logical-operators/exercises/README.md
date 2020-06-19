@@ -1,33 +1,31 @@
 # Debuggercises 
 
-> 6/19/2020, 5:20:10 PM 
+> 6/19/2020, 10:12:26 PM 
 
 ## [exercises](../../README.md)/[07-logical-operators](../README.md)/exercises 
 
-- [/and.js](#andjs) - _error_ 
-- [/not.js](#notjs) - _error_ 
-- [/or.js](#orjs) - _error_ 
-- [/ternary.js](#ternaryjs) - _error_ 
+- [/and.js](#andjs) - _pass_ 
+- [/not.js](#notjs) - _pass_ 
+- [/or.js](#orjs) - _pass_ 
+- [/ternary.js](#ternaryjs) - _pass_ 
 ---
 
 ## /and.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/and.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/and.js:11:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -36,6 +34,10 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
 // write a function that behaves the same as &&
 //  ... without using &&
 function and(left, right) {
+  const leftBool = Boolean(left);
+  if(leftBool === false)
+  return left;
+  return right;
 
 }
 
@@ -74,7 +76,6 @@ console.assert(Object.is(_8_actual, _8_expect), 'Test 8');
 const _9_expect = 'asdf';
 const _9_actual = and(Infinity, 'asdf');
 console.assert(_9_actual === _9_expect, 'Test 9');
-
 ```
 
 [TOP](#debuggercises)
@@ -83,22 +84,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /not.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/not.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/not.js:11:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -107,6 +106,10 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
 // write a function that behaves the same as !
 //  ... but doesn't use !
 function not(value) {
+  const valueBool = Boolean(value);
+  if(valueBool === true)
+  return false;
+  return true;
 
 }
 
@@ -145,7 +148,6 @@ console.assert(_8_actual === _8_expect, 'Test 8');
 const _9_expect = false;
 const _9_actual = not(1);
 console.assert(_9_actual === _9_expect, 'Test 9');
-
 ```
 
 [TOP](#debuggercises)
@@ -154,22 +156,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /or.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/or.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/or.js:11:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -178,6 +178,9 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
 // write a function that behaves the same as ||
 //  ... without using ||
 function or(left, right) {
+  const leftBool = Boolean(left);
+    if(leftBool === true) return left;
+    return right;
 
 }
 
@@ -216,7 +219,6 @@ console.assert(_8_actual === _8_expect, 'Test 8');
 const _9_expect = Infinity;
 const _9_actual = or(Infinity, 'asdf');
 console.assert(_9_actual === _9_expect, 'Test 9');
-
 ```
 
 [TOP](#debuggercises)
@@ -225,22 +227,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /ternary.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/ternary.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/ternary.js:11:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -249,6 +249,8 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
 // write a function that behaves the same as ? :
 //  ... without using ? :
 function ternary(condition, first, second) {
+  if(Boolean(condition) === true) return first;
+  return second;
 
 }
 
@@ -287,7 +289,6 @@ console.assert(isTrue8, 'Test 8');
 const ternary9 = ternary(NaN, 'A', 'B');
 const isTrue9 = ternary9 === 'B';
 console.assert(isTrue9, 'Test 9');
-
 ```
 
 [TOP](#debuggercises)

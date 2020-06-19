@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/19/2020, 5:20:10 PM 
+> 6/19/2020, 10:12:26 PM 
 
 ## [exercises](../README.md)/09-conditionals 
 
@@ -11,9 +11,9 @@
   - [/4-nested-conditionals.js](./0-examples/README.md#4-nested-conditionalsjs) - _pass_ 
   - [/5-unreachable-paths.js](./0-examples/README.md#5-unreachable-pathsjs) - _pass_ 
 - [/1-execution-paths](./1-execution-paths/README.md)
-  - [/1-write-expected.js](./1-execution-paths/README.md#1-write-expectedjs) - _incomplete_ 
-  - [/2-write-arguments.js](./1-execution-paths/README.md#2-write-argumentsjs) - _incomplete_ 
-  - [/3-write-arguments.js](./1-execution-paths/README.md#3-write-argumentsjs) - _error_ 
+  - [/1-write-expected.js](./1-execution-paths/README.md#1-write-expectedjs) - _pass_ 
+  - [/2-write-arguments.js](./1-execution-paths/README.md#2-write-argumentsjs) - _pass_ 
+  - [/3-write-arguments.js](./1-execution-paths/README.md#3-write-argumentsjs) - _pass_ 
   - [/4-write-function.js](./1-execution-paths/README.md#4-write-functionjs) - _incomplete_ 
   - [/5-write-function.js](./1-execution-paths/README.md#5-write-functionjs) - _error_ 
 - [/2-conditional-bodies](./2-conditional-bodies/README.md)

@@ -1,32 +1,30 @@
 # Debuggercises 
 
-> 6/19/2020, 5:20:10 PM 
+> 6/19/2020, 10:12:26 PM 
 
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
 
-- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
 - [/3-write-function.js](#3-write-functionjs) - _error_ 
 ---
 
 ## /1-write-expected.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/1-write-expected.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/1-write-expected.js:13:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -42,43 +40,41 @@ function mystery(x) {
 
 // write the expected return value
 
-const _1_expect = _;
+const _1_expect = 0;
 const _1_actual = mystery(undefined);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
-const _2_expect = _;
+const _2_expect = 0;
 const _2_actual = mystery(null);
 console.assert(_2_actual === _2_expect, 'Test 2');
 
-const _3_expect = _;
+const _3_expect = 1;
 const _3_actual = mystery('false');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
-const _4_expect = _;
+const _4_expect = 0;
 const _4_actual = mystery('');
 console.assert(_4_actual === _4_expect, 'Test 4');
 
-const _5_expect = _;
+const _5_expect = 0;
 const _5_actual = mystery(0);
 console.assert(_5_actual === _5_expect, 'Test 5');
 
-const _6_expect = _;
+const _6_expect = 1;
 const _6_actual = mystery('  ');
 console.assert(_6_actual === _6_expect, 'Test 6');
 
-const _7_expect = _;
+const _7_expect = 1;
 const _7_actual = mystery(-1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = _;
+const _8_expect = 1;
 const _8_actual = mystery('true');
 console.assert(_8_actual === _8_expect, 'Test 8');
 
-const _9_expect = _;
+const _9_expect = 1;
 const _9_actual = mystery(1);
 console.assert(_9_actual === _9_expect, 'Test 9');
-
-
 ```
 
 [TOP](#debuggercises)
@@ -87,22 +83,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /2-write-arguments.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/2-write-arguments.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/2-write-arguments.js:14:27)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -119,42 +113,40 @@ function mystery(x) {
 // find an argument to get the expected return value
 
 const _1_expect = -1;
-const _1_actual = mystery(_);
+const _1_actual = mystery(-1);
 console.assert(Object.is(_1_actual, _1_expect), 'Test 1');
 
 const _2_expect = 0;
-const _2_actual = mystery(_);
+const _2_actual = mystery(0);
 console.assert(Object.is(_2_actual, _2_expect), 'Test 2');
 
 const _3_expect = 1;
-const _3_actual = mystery(_);
+const _3_actual = mystery(1);
 console.assert(Object.is(_3_actual, _3_expect), 'Test 3');
 
 const _4_expect = 0.5;
-const _4_actual = mystery(_);
+const _4_actual = mystery(.5);
 console.assert(Object.is(_4_actual, _4_expect), 'Test 4');
 
 const _5_expect = 1000;
-const _5_actual = mystery(_);
+const _5_actual = mystery(1000);
 console.assert(Object.is(_5_actual, _5_expect), 'Test 5');
 
 const _6_expect = NaN;
-const _6_actual = mystery(_);
+const _6_actual = mystery(undefined);
 console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
 
 const _7_expect = NaN;
-const _7_actual = mystery(_);
+const _7_actual = mystery(null);
 console.assert(Object.is(_7_actual, _7_expect), 'Test 7');
 
 const _8_expect = NaN;
-const _8_actual = mystery(_);
+const _8_actual = mystery(false);
 console.assert(Object.is(_8_actual, _8_expect), 'Test 8');
 
 const _9_expect = NaN;
-const _9_actual = mystery(_);
+const _9_actual = mystery(true);
 console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
-
-
 ```
 
 [TOP](#debuggercises)

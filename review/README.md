@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/19/2020, 5:20:10 PM 
+> 6/19/2020, 10:12:26 PM 
 
 ## /exercises 
 
@@ -76,8 +76,8 @@
     - [/3-number.js](./06-explicit-coercion/examples/README.md#3-numberjs)  
     - [/4-about-nan.js](./06-explicit-coercion/examples/README.md#4-about-nanjs) - _error_ 
   - [/exercises](./06-explicit-coercion/exercises/README.md)
-    - [/1-write-expected.js](./06-explicit-coercion/exercises/README.md#1-write-expectedjs) - _incomplete_ 
-    - [/2-write-arguments.js](./06-explicit-coercion/exercises/README.md#2-write-argumentsjs) - _incomplete_ 
+    - [/1-write-expected.js](./06-explicit-coercion/exercises/README.md#1-write-expectedjs) - _pass_ 
+    - [/2-write-arguments.js](./06-explicit-coercion/exercises/README.md#2-write-argumentsjs) - _pass_ 
     - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _error_ 
 - [/07-logical-operators](./07-logical-operators/README.md)
   - [/examples](./07-logical-operators/examples/README.md)
@@ -87,26 +87,26 @@
     - [/or.js](./07-logical-operators/examples/README.md#orjs)  
     - [/ternary.js](./07-logical-operators/examples/README.md#ternaryjs)  
   - [/exercises](./07-logical-operators/exercises/README.md)
-    - [/and.js](./07-logical-operators/exercises/README.md#andjs) - _error_ 
-    - [/not.js](./07-logical-operators/exercises/README.md#notjs) - _error_ 
-    - [/or.js](./07-logical-operators/exercises/README.md#orjs) - _error_ 
-    - [/ternary.js](./07-logical-operators/exercises/README.md#ternaryjs) - _error_ 
+    - [/and.js](./07-logical-operators/exercises/README.md#andjs) - _pass_ 
+    - [/not.js](./07-logical-operators/exercises/README.md#notjs) - _pass_ 
+    - [/or.js](./07-logical-operators/exercises/README.md#orjs) - _pass_ 
+    - [/ternary.js](./07-logical-operators/exercises/README.md#ternaryjs) - _pass_ 
 - [/08-block-scope](./08-block-scope/README.md)
   - [/1-missing-values](./08-block-scope/1-missing-values/README.md)
-    - [/1.js](./08-block-scope/1-missing-values/README.md#1js) - _incomplete_ 
-    - [/2.js](./08-block-scope/1-missing-values/README.md#2js) - _incomplete_ 
+    - [/1.js](./08-block-scope/1-missing-values/README.md#1js) - _pass_ 
+    - [/2.js](./08-block-scope/1-missing-values/README.md#2js) - _pass_ 
   - [/2-missing-variables](./08-block-scope/2-missing-variables/README.md)
-    - [/1.js](./08-block-scope/2-missing-variables/README.md#1js) - _incomplete_ 
-    - [/2.js](./08-block-scope/2-missing-variables/README.md#2js) - _incomplete_ 
-    - [/3.js](./08-block-scope/2-missing-variables/README.md#3js) - _incomplete_ 
+    - [/1.js](./08-block-scope/2-missing-variables/README.md#1js) - _pass_ 
+    - [/2.js](./08-block-scope/2-missing-variables/README.md#2js) - _pass_ 
+    - [/3.js](./08-block-scope/2-missing-variables/README.md#3js) - _pass_ 
   - [/3-assign-values](./08-block-scope/3-assign-values/README.md)
-    - [/1.js](./08-block-scope/3-assign-values/README.md#1js) - _incomplete_ 
-    - [/2.js](./08-block-scope/3-assign-values/README.md#2js) - _incomplete_ 
-    - [/3.js](./08-block-scope/3-assign-values/README.md#3js) - _incomplete_ 
+    - [/1.js](./08-block-scope/3-assign-values/README.md#1js) - _pass_ 
+    - [/2.js](./08-block-scope/3-assign-values/README.md#2js) - _pass_ 
+    - [/3.js](./08-block-scope/3-assign-values/README.md#3js) - _pass_ 
   - [/4-declare-and-assign](./08-block-scope/4-declare-and-assign/README.md)
-    - [/1.js](./08-block-scope/4-declare-and-assign/README.md#1js) - _incomplete_ 
-    - [/2.js](./08-block-scope/4-declare-and-assign/README.md#2js) - _incomplete_ 
-    - [/3.js](./08-block-scope/4-declare-and-assign/README.md#3js) - _incomplete_ 
+    - [/1.js](./08-block-scope/4-declare-and-assign/README.md#1js) - _pass_ 
+    - [/2.js](./08-block-scope/4-declare-and-assign/README.md#2js) - _pass_ 
+    - [/3.js](./08-block-scope/4-declare-and-assign/README.md#3js) - _pass_ 
 - [/09-conditionals](./09-conditionals/README.md)
   - [/0-examples](./09-conditionals/0-examples/README.md)
     - [/1-if-else.js](./09-conditionals/0-examples/README.md#1-if-elsejs) - _pass_ 
@@ -115,9 +115,9 @@
     - [/4-nested-conditionals.js](./09-conditionals/0-examples/README.md#4-nested-conditionalsjs) - _pass_ 
     - [/5-unreachable-paths.js](./09-conditionals/0-examples/README.md#5-unreachable-pathsjs) - _pass_ 
   - [/1-execution-paths](./09-conditionals/1-execution-paths/README.md)
-    - [/1-write-expected.js](./09-conditionals/1-execution-paths/README.md#1-write-expectedjs) - _incomplete_ 
-    - [/2-write-arguments.js](./09-conditionals/1-execution-paths/README.md#2-write-argumentsjs) - _incomplete_ 
-    - [/3-write-arguments.js](./09-conditionals/1-execution-paths/README.md#3-write-argumentsjs) - _error_ 
+    - [/1-write-expected.js](./09-conditionals/1-execution-paths/README.md#1-write-expectedjs) - _pass_ 
+    - [/2-write-arguments.js](./09-conditionals/1-execution-paths/README.md#2-write-argumentsjs) - _pass_ 
+    - [/3-write-arguments.js](./09-conditionals/1-execution-paths/README.md#3-write-argumentsjs) - _pass_ 
     - [/4-write-function.js](./09-conditionals/1-execution-paths/README.md#4-write-functionjs) - _incomplete_ 
     - [/5-write-function.js](./09-conditionals/1-execution-paths/README.md#5-write-functionjs) - _error_ 
   - [/2-conditional-bodies](./09-conditionals/2-conditional-bodies/README.md)
