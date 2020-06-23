@@ -1,32 +1,27 @@
 # Debuggercises 
 
-> 6/19/2020, 10:12:26 PM 
+> 6/23/2020, 5:50:34 PM 
 
 ## [exercises](../../README.md)/[10-functions-201](../README.md)/2-fix-the-bugs 
 
-- [/1.js](#1js) - _error_ 
-- [/2.js](#2js) - _error_ 
-- [/3.js](#3js) - _error_ 
+- [/1.js](#1js) - _pass_ 
+- [/2.js](#2js) - _pass_ 
+- [/3.js](#3js) - _pass_ 
 ---
 
 ## /1.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/10-functions-201/2-fix-the-bugs/1.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/10-functions-201/2-fix-the-bugs/1.js:33:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -46,11 +41,11 @@ function areNotSameLength(num1, num2) {
   if (typeof num1 !== 'number') { throw new TypeError(); }
   if (typeof num2 !== 'number') { throw new TypeError(); }
 
-  const result = 'the same';
-  if (num1 = num2) {
-    result === `are {result}`;
+  let result = 'the same';
+  if (num1 === num2) {
+    result = `are ${result}`;
   } else {
-    result === "aren't ${result}";
+    result = `aren\'t ${result}`;
   }
 
   if (typeof result !== 'string') { throw new TypeError(); }
@@ -83,7 +78,6 @@ console.assert(_5_actual === _5_expect, 'Test 5');
 const _6_expect = "aren't the same";
 const _6_actual = areNotSameLength(1000, 1e4);
 console.assert(_6_actual === _6_expect, 'Test 6');
-
 ```
 
 [TOP](#debuggercises)
@@ -92,22 +86,17 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ## /2.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/10-functions-201/2-fix-the-bugs/2.js)
 
 ```txt
-UNCAUGHT: TypeError: Cannot create property 'Length' on string 'carboat'
-    at areNotSameLength (  ...  /exercises/10-functions-201/2-fix-the-bugs/2.js:18:19)
-    at Object.<anonymous> (  ...  /exercises/10-functions-201/2-fix-the-bugs/2.js:32:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -128,10 +117,10 @@ function areNotSameLength(str1, str2) {
   if (typeof str2 !== 'string') { throw new TypeError(); }
 
   let result;
-  if (str1.Length = str2.Length) {
-    result += true;
+  if (str1.length !== str2.length) {
+    result = true;
   } else {
-    result += false;
+    result = false;
   }
 
   if (typeof result !== 'boolean') { throw new TypeError(); }
@@ -164,7 +153,6 @@ console.assert(_5_actual === _5_expect, 'Test 5');
 const _6_expect = false;
 const _6_actual = areNotSameLength('hi!', 'bye');
 console.assert(_6_actual === _6_expect, 'Test 6');
-
 ```
 
 [TOP](#debuggercises)
@@ -173,22 +161,17 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ## /3.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/10-functions-201/2-fix-the-bugs/3.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/10-functions-201/2-fix-the-bugs/3.js:36:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -210,12 +193,12 @@ function longestOrBoth(str1, str2) {
   if (typeof str2 !== 'string') { throw new TypeError(); }
 
   let result = '';
-  if (str1 >= str2) {
-    result === str1;
-  } if (str1 <= str2) {
-    result === str2;
+  if (str1.length > str2.length) {
+    result = str1;
+  }else if (str1.length < str2.length) {
+    result = str2;
   } else {
-    result === `${str1}${str2}`;
+    result = `${str1}${str2}`;
   }
 
   if (typeof result !== 'string') { throw new TypeError(); }
@@ -248,7 +231,6 @@ console.assert(_5_actual === _5_expect, 'Test 5');
 const _6_expect = 'hi!bye';
 const _6_actual = longestOrBoth('hi!', 'bye');
 console.assert(_6_actual === _6_expect, 'Test 6');
-
 ```
 
 [TOP](#debuggercises)

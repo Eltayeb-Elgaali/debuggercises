@@ -6,11 +6,12 @@
 function mystery(a, b) {
   let result = '';
   if (typeof a === typeof b) {
-    result = _;
+    result = a;
   } else if (Boolean(a) === Boolean(b)) {
-    result = _;
-  } else {
-    result = _;
+    result = b;
+  } else { if(b !== 0) {
+    result = b;}
+    else {result = a;}
   }
   return result;
 }

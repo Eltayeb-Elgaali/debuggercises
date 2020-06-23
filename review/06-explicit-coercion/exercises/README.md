@@ -1,12 +1,12 @@
 # Debuggercises 
 
-> 6/19/2020, 10:12:26 PM 
+> 6/23/2020, 5:50:34 PM 
 
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
 
 - [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
-- [/3-write-function.js](#3-write-functionjs) - _error_ 
+- [/3-write-function.js](#3-write-functionjs) - _pass_ 
 ---
 
 ## /1-write-expected.js 
@@ -155,22 +155,20 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
 ## /3-write-function.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/3-write-function.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/3-write-function.js:16:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -182,7 +180,7 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
    ===
 */
 function mystery(x, y) {
-
+  return Number(x) === Number(y)
 }
 
 // all of the test cases are correct
@@ -222,8 +220,6 @@ console.assert(_8_actual === _8_expect, 'Test 8');
 const _9_expect = false;
 const _9_actual = mystery(undefined, undefined);
 console.assert(_9_actual === _9_expect, 'Test 9');
-
-
 ```
 
 [TOP](#debuggercises)

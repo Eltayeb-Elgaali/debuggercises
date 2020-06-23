@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/19/2020, 10:12:26 PM 
+> 6/23/2020, 5:50:34 PM 
 
 ## /exercises 
 
@@ -78,7 +78,7 @@
   - [/exercises](./06-explicit-coercion/exercises/README.md)
     - [/1-write-expected.js](./06-explicit-coercion/exercises/README.md#1-write-expectedjs) - _pass_ 
     - [/2-write-arguments.js](./06-explicit-coercion/exercises/README.md#2-write-argumentsjs) - _pass_ 
-    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _error_ 
+    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _pass_ 
 - [/07-logical-operators](./07-logical-operators/README.md)
   - [/examples](./07-logical-operators/examples/README.md)
     - [/0-truthiness.js](./07-logical-operators/examples/README.md#0-truthinessjs)  
@@ -118,25 +118,25 @@
     - [/1-write-expected.js](./09-conditionals/1-execution-paths/README.md#1-write-expectedjs) - _pass_ 
     - [/2-write-arguments.js](./09-conditionals/1-execution-paths/README.md#2-write-argumentsjs) - _pass_ 
     - [/3-write-arguments.js](./09-conditionals/1-execution-paths/README.md#3-write-argumentsjs) - _pass_ 
-    - [/4-write-function.js](./09-conditionals/1-execution-paths/README.md#4-write-functionjs) - _incomplete_ 
-    - [/5-write-function.js](./09-conditionals/1-execution-paths/README.md#5-write-functionjs) - _error_ 
+    - [/4-write-function.js](./09-conditionals/1-execution-paths/README.md#4-write-functionjs) - _pass_ 
+    - [/5-write-function.js](./09-conditionals/1-execution-paths/README.md#5-write-functionjs) - _pass_ 
   - [/2-conditional-bodies](./09-conditionals/2-conditional-bodies/README.md)
-    - [/1-write-expected.js](./09-conditionals/2-conditional-bodies/README.md#1-write-expectedjs) - _incomplete_ 
-    - [/2-write-arguments.js](./09-conditionals/2-conditional-bodies/README.md#2-write-argumentsjs) - _incomplete_ 
-    - [/3-write-function.js](./09-conditionals/2-conditional-bodies/README.md#3-write-functionjs) - _incomplete_ 
+    - [/1-write-expected.js](./09-conditionals/2-conditional-bodies/README.md#1-write-expectedjs) - _pass_ 
+    - [/2-write-arguments.js](./09-conditionals/2-conditional-bodies/README.md#2-write-argumentsjs) - _pass_ 
+    - [/3-write-function.js](./09-conditionals/2-conditional-bodies/README.md#3-write-functionjs) - _pass_ 
 - [/10-functions-201](./10-functions-201/README.md)
   - [/0-examples](./10-functions-201/0-examples/README.md)
     - [/1-documenting-functions.js](./10-functions-201/0-examples/README.md#1-documenting-functionsjs)  
     - [/2-enforcing-types.js](./10-functions-201/0-examples/README.md#2-enforcing-typesjs)  
     - [/3-behavior-vs-implementation.js](./10-functions-201/0-examples/README.md#3-behavior-vs-implementationjs) - _pass_ 
   - [/1-fill-in-the-blanks](./10-functions-201/1-fill-in-the-blanks/README.md)
-    - [/1-write-tests.js](./10-functions-201/1-fill-in-the-blanks/README.md#1-write-testsjs) - _incomplete_ 
-    - [/2-write-tests.js](./10-functions-201/1-fill-in-the-blanks/README.md#2-write-testsjs) - _incomplete_ 
-    - [/3-pass-tests.js](./10-functions-201/1-fill-in-the-blanks/README.md#3-pass-testsjs) - _incomplete_ 
-    - [/4-pass-tests.js](./10-functions-201/1-fill-in-the-blanks/README.md#4-pass-testsjs) - _incomplete_ 
-    - [/5-twins.js](./10-functions-201/1-fill-in-the-blanks/README.md#5-twinsjs) - _incomplete_ 
-    - [/6-twins.js](./10-functions-201/1-fill-in-the-blanks/README.md#6-twinsjs) - _incomplete_ 
+    - [/1-write-tests.js](./10-functions-201/1-fill-in-the-blanks/README.md#1-write-testsjs) - _pass_ 
+    - [/2-write-tests.js](./10-functions-201/1-fill-in-the-blanks/README.md#2-write-testsjs) - _pass_ 
+    - [/3-pass-tests.js](./10-functions-201/1-fill-in-the-blanks/README.md#3-pass-testsjs) - _pass_ 
+    - [/4-pass-tests.js](./10-functions-201/1-fill-in-the-blanks/README.md#4-pass-testsjs) - _pass_ 
+    - [/5-twins.js](./10-functions-201/1-fill-in-the-blanks/README.md#5-twinsjs) - _pass_ 
+    - [/6-twins.js](./10-functions-201/1-fill-in-the-blanks/README.md#6-twinsjs) - _pass_ 
   - [/2-fix-the-bugs](./10-functions-201/2-fix-the-bugs/README.md)
-    - [/1.js](./10-functions-201/2-fix-the-bugs/README.md#1js) - _error_ 
-    - [/2.js](./10-functions-201/2-fix-the-bugs/README.md#2js) - _error_ 
-    - [/3.js](./10-functions-201/2-fix-the-bugs/README.md#3js) - _error_ 
+    - [/1.js](./10-functions-201/2-fix-the-bugs/README.md#1js) - _pass_ 
+    - [/2.js](./10-functions-201/2-fix-the-bugs/README.md#2js) - _pass_ 
+    - [/3.js](./10-functions-201/2-fix-the-bugs/README.md#3js) - _pass_ 
